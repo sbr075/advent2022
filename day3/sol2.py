@@ -1,5 +1,6 @@
 import string
-priority = {(string.ascii_lowercase + string.ascii_uppercase)[c]:c+1 for c in range(len(string.ascii_lowercase) + len(string.ascii_uppercase))}
+all_chars = string.ascii_lowercase + string.ascii_uppercase
+priority = {all_chars[c]:c+1 for c in range(all_chars)}
 
 total_sum = 0
 with open("day3/input2.txt", "r") as file:
