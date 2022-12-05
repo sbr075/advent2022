@@ -3,10 +3,12 @@ def overlaps(s1, s2):
 
 overlap = 0
 with open("day4/input.txt", "r") as file:
-    for line in file.readlines():
-        s1, s2 = [[int(s) for s in section.split("-")] for section in line.split(",")]
+    lines = [line.split(",") for line in file.readlines()]
 
-        if overlaps(s1, s2) or overlaps(s2, s1):
+    for line in lines:
+        s1, s2 = [[int(s) for s in l.split("-")] for l in line]
+
+        if overlaps(s1, s2):
             overlap += 1
 
 print(overlap)

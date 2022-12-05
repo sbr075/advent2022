@@ -3,8 +3,9 @@ def contains(s1, s2):
 
 fully_contained = 0
 with open("day4/input.txt", "r") as file:
-    for line in file.read().split("\n"):
-        s1, s2 = [[int(s) for s in section.split("-")] for section in line.split(",")]
+    lines = [line.split(",") for line in file.readlines()]
+    for line in lines:
+        s1, s2 = [[int(s) for s in l.split("-")] for l in line]
 
         if contains(s1, s2) or contains(s2, s1):
             fully_contained += 1
