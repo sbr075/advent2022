@@ -1,4 +1,3 @@
-
 with open("day6/input.txt", "r") as file:
     inp = file.read()
     msg_len = 4
