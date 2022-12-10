@@ -2,7 +2,7 @@ import string
 priority = {string.ascii_letters[c]:c+1 for c in range(len(string.ascii_letters))}
 
 total_sum = 0
-with open("day3/input.txt", "r") as file:
+with open("input.txt", "r") as file:
     for line in file.readlines():
         half = len(line) // 2
         comp1, comp2 = line[:half], line[half:]

@@ -1,6 +1,6 @@
 import numpy as np
 
-with open("day8/input.txt", "r") as file:
+with open("input.txt", "r") as file:
     heights = np.array([[int(c) for c in s if c.isnumeric()] for s in file.readlines()])
     visible = np.ones(heights.shape)
     visible[1:-1, 1:-1] = 0

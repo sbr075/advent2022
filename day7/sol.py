@@ -1,5 +1,5 @@
 dirs = []
-with open("day7/input.txt", "r") as file:
+with open("input.txt", "r") as file:
     depth = 0
     for line in file.readlines():
         if ".." in line:

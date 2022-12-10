@@ -2,7 +2,7 @@ conv1 = {"A": 0, "B": 1, "C": 2}
 conv2 = {"X": 0, "Y": 1, "Z": 2}
 
 total_score = 0
-with open("day2/input.txt", "r") as file:
+with open("input.txt", "r") as file:
     for line in file.read().split("\n"):
         vals = line.split()
         val1 = conv1[vals[0]]

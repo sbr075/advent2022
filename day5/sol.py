@@ -1,7 +1,7 @@
 import re
 
 stack = {}
-with open("day5/input.txt", "r") as file:
+with open("input.txt", "r") as file:
     inp = file.read().split("\n\n")
     stacks = inp[0].split("\n")
     instructions = inp[1].split("\n")

@@ -2,7 +2,7 @@ def overlaps(s1, s2):
     return not(s1[0] > s2[1] or s1[1] < s2[0])
 
 overlap = 0
-with open("day4/input.txt", "r") as file:
+with open("input.txt", "r") as file:
     lines = [line.split(",") for line in file.readlines()]
 
     for line in lines:
